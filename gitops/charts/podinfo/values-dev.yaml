@@ -1,0 +1,19 @@
+replicaCount: 2
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 200m
+    memory: 128Mi
+
+ui:
+  message: "Hyaa user of Pod Info — deployed via ArgoCD"
+  color: "#34577c"
+
+serviceMonitor:
+  enabled: false
+
+podAnnotations:
+  environment: dev
